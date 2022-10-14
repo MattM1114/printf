@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	va_list list;
 	int i = 0, j, len = 0;
 
-	va_start(args, format);
+	va_start(list, format);
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
@@ -33,7 +33,7 @@ Here:
 		{
 			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])
 			{
-				len += m[j].f(args);
+				len += m[j].f(list);
 				i = i + 2;
 				goto Here;
 			}
@@ -43,6 +43,6 @@ Here:
 		len++;
 		i++;
 	}
-	va_end(args);
+	va_end(list);
 	return (len);
 }
