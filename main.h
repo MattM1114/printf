@@ -10,3 +10,5 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int printf_b(va_list list);
+int printf_int(va_list args);
+int printf_dec(va_list args);
