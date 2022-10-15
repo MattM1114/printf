@@ -24,3 +24,4 @@ int printf_oct(va_list val);
 int printf_srev(va_list args);
 int printf_pointer(va_list val);
 int printf_rot13(va_list args);
+int printf_unsigned(va_list args);
