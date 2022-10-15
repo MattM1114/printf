@@ -12,3 +12,6 @@ int _putchar(char c);
 int printf_b(va_list list);
 int printf_int(va_list args);
 int printf_dec(va_list args);
+int printf_hex_aux(unsigned long int num);
+int printf_hex(va_list val);
+int printf_string(va_list val);
