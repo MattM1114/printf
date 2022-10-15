@@ -2,7 +2,7 @@
 
 /**
  * printf_b - prints a binary number.
- * @list: arguments.
+ * @val: arguments.
  * Return: 1.
  */
 int printf_bin(va_list val)
