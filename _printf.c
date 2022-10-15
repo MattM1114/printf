@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 		{"%s", printf_e}, {"%c", printf_d},
 		{"%%", printf_f},
 		{"%i", printf_a}, {"%d", printf_dec}, {"%r", printf_k},
-		{"%R", printf_rot13}, {"%b", printf_b}, {"%u", printf_unsigned},
+		{"%R", printf_l}, {"%b", printf_b}, {"%u", printf_unsigned},
 		{"%o", printf_i}, {"%x", printf_c}, {"%X", printf_h},
 		{"%s", printF_g}, {"%p", printf_j}
 	};
