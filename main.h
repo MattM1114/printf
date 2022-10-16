@@ -25,3 +25,18 @@ int printf_srev(va_list args);
 int printf_pointer(va_list val);
 int printf_rot13(va_list args);
 int printf_unsigned(va_list args);
+
+/**
+ * struct format - match the conversion specifiers for printf
+ * @id: type char pointer of the specifier i.e (l, h) for (d, i, u, o, x, X)
+ * @f: type pointer to function for the conversion specifier
+ *
+ */
+
+typedef struct format
+{
+	char *id;
+	int (*f)();
+} convert_match;
+
+#endif
